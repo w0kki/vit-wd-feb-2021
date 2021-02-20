@@ -13,6 +13,7 @@ html syntax
  - attributes (relative path becomes relevant here)
  - parent and child tags
  - documentation when you get stuck
+ - comments
  
 html concepts
 - inline vs block
