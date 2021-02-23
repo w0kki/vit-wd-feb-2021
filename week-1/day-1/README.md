@@ -13,6 +13,7 @@ html syntax
  - attributes (relative path becomes relevant here)
  - parent and child tags
  - documentation when you get stuck
+ - comments
  
 html concepts
 - inline vs block
@@ -35,6 +36,3 @@ inline elements for day 1
  
 underlying file system concept
  - absolute vs relative path
-
-Exit Ticket
- - **[Socrative Quiz](https://b.socrative.com/login/student/?feature=embed)** 
