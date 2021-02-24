@@ -26,12 +26,12 @@ HTML Tags
 - [source](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source)
 
 
-### Exit Ticket
+### Exercise
   
 - Build Table with music player embedded
 
 Steps.
-1. Create an exitTicket_day2.html file.
+1. Create an exercise.html file.
 2. Implement the mockup below
 3. stage, commit, and push your changes back up to your repository
 
