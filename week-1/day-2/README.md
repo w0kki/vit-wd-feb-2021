@@ -11,19 +11,19 @@
 ### Learning Objectives
 
 HTML Tags
-- br
-- hr
-- script
-- table
-- th
-- tr
-- td
-- form
-- input
-- label
-- audio
-- video
-- source
+- [br](https://www.w3schools.com/TAGs/tag_br.asp)
+- [hr](https://www.w3schools.com/TAGs/tag_hr.asp)
+- [script](https://www.w3schools.com/TAGs/tag_script.asp)
+- [table](https://www.w3schools.com/TAGs/tag_table.asp)
+- [th](https://www.w3schools.com/TAGs/tag_th.asp)
+- [tr](https://www.w3schools.com/TAGs/tag_tr.asp)
+- [td](https://www.w3schools.com/TAGs/tag_td.asp)
+- [form](https://www.w3schools.com/TAGs/tag_form.asp)
+- [input](https://www.w3schools.com/TAGs/tag_input.asp)
+- [label](https://www.w3schools.com/TAGs/tag_label.asp)
+- [audio](https://www.w3schools.com/TAGs/tag_audio.asp)
+- [video](https://www.w3schools.com/TAGs/tag_video.asp)
+- [source](https://www.w3schools.com/TAGs/tag_source.asp)
 
 
 ### Exit Ticket
