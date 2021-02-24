@@ -18,7 +18,3 @@
   - Color
   - Web Typography
   - Box Model
-
-### Exit Ticket
-  
-- Socrative
