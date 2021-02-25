@@ -19,6 +19,10 @@
   - Web Typography
   - Box Model
 
-### Exit Ticket
-  
-- Socrative
+### Exercise
+
+1. create a rule for all `div` tags with a width and height of 100px. include float, left.
+2. select the class `yellow` and create a rule for background color yellow.
+3. select the id `leftEye` and create a rule for background color black.
+4. select the id `wink` and create a rule for width of 95 pixels, height of 90 pixels and border bottom of `solid 10px black`.
+5. select the class `smile` and create a rule for background color with the rgb of 40, 30, 25
