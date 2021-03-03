@@ -2,11 +2,7 @@
 
 ## Week 2 Day 2
 
-### Warm Up - Socrative Flex box
-
-Roomname: FALL2020VETSINTECH
-https://b.socrative.com/login/student/?feature=embed
-
+### Warm Up - N/A
 
 #### Reference
 - [Overflow](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Overflowing_content)
@@ -26,13 +22,15 @@ https://b.socrative.com/login/student/?feature=embed
 - translate
 - translateX
 - translateY
+
+
+### Review
 - display: flex
 - box model
 - inline elements
 - block elements
 - inline-block elements
 - overflow
-- Image Carousel
 
-### Exit Ticket
+### ELO
 - create an animated carousel
