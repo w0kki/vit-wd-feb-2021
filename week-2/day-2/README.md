@@ -4,6 +4,14 @@
 
 ### Warm Up - N/A
 
+### Review
+- display: flex
+- box model
+- inline elements
+- block elements
+- inline-block elements
+- overflow
+
 #### Reference
 - [Overflow](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Overflowing_content)
 - [Box Model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model)
@@ -22,15 +30,6 @@
 - translate
 - translateX
 - translateY
-
-
-### Review
-- display: flex
-- box model
-- inline elements
-- block elements
-- inline-block elements
-- overflow
 
 ### ELO
 - create an animated carousel
