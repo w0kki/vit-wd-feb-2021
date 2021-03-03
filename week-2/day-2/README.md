@@ -10,7 +10,6 @@
 - inline elements
 - block elements
 - inline-block elements
-- overflow
 
 #### Reference
 - [Overflow](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Overflowing_content)
@@ -24,6 +23,7 @@
 - [@keyframes](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes)
 
 ### Learning Objectives
+- overflow
 - animation 
 - keyframes
 - transform
