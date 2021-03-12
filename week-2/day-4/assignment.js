@@ -15,3 +15,13 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
 }
+
+// function slideRight() {
+//   var slider = document.getElementById("jsSlider");
+//   slider.style.transform = "translateX(0px)";
+// }
+
+// function slideLeft() {
+//   var slider = document.getElementById("jsSlider");
+//   slider.style.transform = "translateX(-500px)";
+// }

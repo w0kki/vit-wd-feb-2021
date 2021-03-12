@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 img{
     width: 400px;
     height: 250px;
@@ -21,4 +22,33 @@ img{
     animation-name: carousel;
     animation-duration: 10s;
     animation-iteration-count: infinite;
+=======
+img {
+  min-width: 500px;
+  height: 300px;
+}
+
+#window {
+  width: 500px;
+  height: 300px;
+  border: solid 5px red;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#imgSlider {
+  display: flex;
+  animation-name: carousel;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes carousel {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-2500px);
+  }
+>>>>>>> 9fbcb841f482f259b23129f262be5d2db299cb82
 }

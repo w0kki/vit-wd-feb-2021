@@ -1,29 +1,32 @@
-2 ways to use JS s/ HTML
-    - script (tag) (can be use in the head or inline)
-    - external js file (invoked via scipt tag anywhere in the html doc)
+2 ways to utilize JS with HTML (and CSS)
 
-//FUNCTIONS
-    syntax
-        function nameOfYourFunc(){
-            ?? do something
-        }
+answer: script tag
 
-    Utiliazation of the function
-        1-declaration
-        2-invocation
-    
-The Event Elements:
+EXTERNAL JS FILE
 
--form
--button
--input
+// FUNCTIONS
 
-what is the difference between a single = and a ==?
-    = assign a value to a var
-    == returns a true false (yes/no) value on comparison
+syntax
+
+function nameOfYourFunc(){
+    //  do something
+}
+
+utilization of the function
+
+1. declaration
+2. invocation
+
+The Event Elements
+
+- form
+- button
+- input
+
+what is the difference between a single = and the == 
 
 Events Feature
-    1-listerners
-    2-handlers
+1. listeners
+2. handlers
 
-event listerners are tied to the html element.
+the event listeners are tied to the html element.
