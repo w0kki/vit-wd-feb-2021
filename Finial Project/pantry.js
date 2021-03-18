@@ -1,75 +1,67 @@
 var inputText = document.getElementById("itemDescription"),
-    items = document.querySelectorAll("#inventoryList li"),
-    tab = [], 
-    index;
-         
-// get the selected li index using array
-// populate array with li values
+    inputUPC = document.getElementById("upcCode"),
+    inputAmount = document.getElementById("amount");
 
-for(var i = 0; i < items.length; i++){
-    tab.push(items[i].innerHTML);
+function resetForm() {
+        document.getElementById("itemDescription").value = "";
+        document.getElementById("upcCode").value = "";
+        document.getElementById("amount").value = "";
     }
 
-// get li index onclick
-for(var i = 0; i < items.length; i++){
-    
-    items[i].onclick = function(){
-        index = tab.indexOf(this.innerHTML);
-        console.log(this.innerHTML + " INDEX = " + index);
-        // set the selected li value into input text
-        inputText.value = this.innerHTML;
-        };
-    
-    }
-
-function refreshArray(){
-    // clear array
-    tab.length = 0;
-    items = document.querySelectorAll("#inventoryList li");
-    // fill array
-    for(var i = 0; i < items.length; i++){
-        tab.push(items[i].innerHTML);
-        }
-    }
+var itemId = 1;
 
 function addItem(){
-    
-    var inputText = document.getElementById("itemDescription"),
-        listItem = document.getElementById("inventoryList"),
-        textItem = document.createTextNode(inputText.value),
-        liItem = document.createElement("li");
-        
-        liItem.appendChild(textItem);
-        listItem.appendChild(liItem);
-        
-        refreshArray();
-        
-        // add event to the new LI
-        
-        liItem.onclick = function(){
-            index = tab.indexOf(liItem.innerHTML);
-            console.log(liItem.innerHTML + " INDEX = " + index);
-            // set the selected li value into input text
-            inputText.value = liItem.innerHTML;
-        };
-        
-    }
-    
-function editItem(){
-    var inputText = document.getElementById("itemDescription"),
-        items = document.querySelectorAll("#inventoryList li");
+    var newName = document.createElement('li');
+    newName.innerText = inputText.value;
+    newName.classList.add(`${itemId}`);
+    var nameList = document.querySelector('#name');
+    nameList.appendChild(newName);
 
-    // edit the selected li using input text
-    items[index].innerHTML = inputText.value;
-    refreshArray();
+    var newUPC = document.createElement('li')
+    newUPC.innerText = inputUPC.value;
+    newUPC.classList.add(`${itemId}`);
+    var UPCList = document.querySelector('#UPC');
+    UPCList.appendChild(newUPC)
+
+    var newQuantity = document.createElement('li')
+    newQuantity.innerHTML = `${inputAmount.value} <button id=${itemId} onclick=editItem(event)>Edit </button>`
+    newQuantity.classList.add(`${itemId}`);
+    var quantityList = document.querySelector('#quantity');
+    quantityList.appendChild(newQuantity)
+
+    itemId++;
+
+    resetForm();
+
+    }
+
+var clickedItemId = null;
+
+function editItem(e) {
+        console.log(e.target)
+        var listItems = document.getElementsByClassName(`${e.target.id}`);
+        inputText.value = listItems[0].innerText;
+        inputUPC.value = listItems[1].innerText;
+        inputAmount.value = listItems[2].innerText.slice(' ')[0];
+        clickedItemId = e.target.id;
+    }
+
+function updateItem(){
+    var listItems = document.getElementsByClassName(`${clickedItemId}`);
+    listItems[0].innerText = inputText.value;
+    listItems[1].innerText = inputUPC.value;
+    listItems[2].innerHTML = `${inputAmount.value} <button id=${clickedItemId} onclick=editItem(event)>Edit </button>`
+    
+    resetForm();
+
     }
 
 function deleteItem(){
-    var inputText = document.getElementById("itemDescription");
-    
-        refreshArray();
-        if(items.length > 0){
-            items[index].parentNode.removeChild(items[index]);
-            inputText.value = "";
-            }
+    var listItems = document.getElementsByClassName(`${clickedItemId}`);
+    listItems[0].innerText = "";
+    listItems[1].innerText = "";
+    listItems[2].innerHTML = "";
+
+    resetForm();
+
     }

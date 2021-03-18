@@ -1,4 +1,49 @@
 li{
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+}
+
+#inputText, #inputUPC, #inputAmount {
+    margin: 0 5%;
+    font-size: 24px;
+}
+
+button{
+    background-color: transparent;
+    cursor: pointer;
+    /* border: none; */
+}
+
+.mainbutton {
+    background-color: whitesmoke;
+    width: 80px;
+}
+
+#delete{
+    background-color: red;
+    width: 80px;
+}
+
+.input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 100px;  */
+}
+
+.headerListItem {
     font-family: 'Ranchers', cursive;
-    cursor: pointer
+    list-style-type: none;
+    color: darkgreen;
+}
+
+#output {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#quantity{
+    padding-right: 2px;
 }

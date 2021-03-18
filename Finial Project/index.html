@@ -1,33 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pantry Inventory</title>
-    <link rel="stylesheet" href="./pantry.css">
-    <script src="./pantry.js"></script>
+    <link rel="stylesheet" href="./pantry.css" />
+    <script defer src="./pantry.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap"
+      rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
     <header>
-        <!-- logo, search field, login info -->
-        <h1 style="text-align: center;">Pantry Inventory</h1>
+      <!-- logo, search field, login info -->
+      <h1 style="text-align: center">Pantry Inventory</h1>
     </header>
-    <div id="input">
-        <input type="text" id="itemDescription">
-        <!-- <input type="text" id="upcCode" placeholder="UPC Code"> -->
-        <!-- <input type="number" id="amount" placeholder="item count"> -->
-        <button onclick="addItem()">Add</button>
-        <button onclick="editItem()">Edit</button>
-        <button onclick="deleteItem()">Delete</button>
+    <div class="input">
+      <div>
+        Item Description:
+        <input
+          type="text"
+          id="itemDescription"
+          placeholder="Item description"
+        />
+      </div>
+      <div>
+        UPC Code: <input type="text" id="upcCode" placeholder="UPC Code" />
+      </div>
+      <div>
+        How Many: <input type="number" id="amount" placeholder="amount" />
+      </div>
+      <div>
+        <button class="mainbutton" onclick="addItem()">Add</button>
+        <button class="mainbutton" onclick="updateItem()">Update</button>
+        <button id="delete" onclick="deleteItem()">Delete</button>
+      </div>
     </div>
-    <hr>
+    <hr />
     <div id="output">
-        <ul id="inventoryList">
-            <!-- <li id="items"></li> -->
+      <ul id="name">
+          <li class="headerListItem">Name</li>
         </ul>
-    </div>    
-</body>
+        <ul id="UPC">
+            <li class="headerListItem">UPC</li>
+        </ul>
+        <ul id="quantity">
+            <li class="headerListItem">Quantity</li>
+            
+      </ul>
+      <!-- <li id="items"></li> -->
+    </div>
+  </body>
 </html>
