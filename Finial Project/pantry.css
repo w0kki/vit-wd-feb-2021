@@ -1,55 +1,60 @@
-li{
-    font-family: 'Roboto', sans-serif;
-    list-style: none;
+li {
+  font-family: "Roboto", sans-serif;
+  list-style: none;
 }
 
-#inputText, #inputUPC, #inputAmount {
-    margin: 0 5%;
-    font-size: 24px;
+#inputText,
+#inputUPC,
+#inputAmount {
+  margin: 0 5%;
+  font-size: 24px;
 }
 
-button{
-    background-color: transparent;
-    cursor: pointer;
-    /* border: none; */
+button {
+  background-color: transparent;
+  cursor: pointer;
+  /* border: none; */
 }
 
 .mainbutton {
-    background-color: whitesmoke;
-    width: 80px;
+  background-color: whitesmoke;
+  width: 80px;
 }
 
-#delete{
-    background-color: red;
-    width: 80px;
+#delete {
+  background-color: red;
+  width: 80px;
 }
 
-.input{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: lightgray;
-    /* width: 100px;  */
+.input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightgray;
 }
 
 .headerListItem {
-    font-family: 'Ranchers', cursive;
-    list-style-type: none;
-    color: darkgreen;
+  font-family: "Ranchers", cursive;
+  list-style-type: none;
+  color: darkgreen;
 }
 
 #output {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
-#quantity{
-    padding-right: 2px;
+#quantity {
+  padding-right: 2px;
 }
 
-/* head{
-    display: flex;
-    justify-content: space-between;
-} */
+html { 
+    background: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm218batch3-ning-15_1.jpg?bg=transparent&con=3&cs=srgb&dpr=1&fm=jpg&ixlib=php-3.1.0&q=65&usm=15&vib=3&w=1200&s=1a1a9a83b83315144fedd9a4ab9b98a4") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: 0 170px;
+  }

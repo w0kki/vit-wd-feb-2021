@@ -10,16 +10,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap"
-      rel="stylesheet"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <header>
       <!-- logo, search field, login info -->
-      <span><h1>Pantry Inventory</h1></span>
-      <span><p>login</span><span>search</p></span>
+      <h1>Pantry Inventory</h1>
     </header>
     <div class="input">
       <div>
@@ -37,22 +40,24 @@
         How Many: <input type="number" id="amount" placeholder="amount" />
       </div>
       <div>
-        Location: <select name="location" id="location">
+        Location:
+        <select name="location" id="location">
           <option value="freezer">Freezer</option>
           <option value="pantry">Pantry</option>
           <option value="chestFreezer">Chest Freezer</option>
           <option value="pantry2">Pantry 2</option>
         </select>
-      </div><div>
-        Category: <input type="text" id="upcCode" placeholder="Category" />
-      </div><div>
-        Min Stock: <input type="text" id="upcCode" placeholder="Min Stock" />
-      </div><div>
-        Exp Date: <input type="text" id="upcCode" placeholder="Exp Date" />
       </div>
       <div>
-        Image: <input type="file" id="upcCode" />
+        Category: <input type="text" id="upcCode" placeholder="Category" />
       </div>
+      <div>
+        Min Stock: <input type="text" id="upcCode" placeholder="Min Stock" />
+      </div>
+      <div>
+        Exp Date: <input type="text" id="upcCode" placeholder="Exp Date" />
+      </div>
+      <div>Image: <input type="file" id="upcCode" /></div>
       <div>
         <button class="mainbutton" onclick="addItem()">Add</button>
         <button class="mainbutton" onclick="updateItem()">Update</button>
@@ -62,14 +67,13 @@
     <hr />
     <div id="output">
       <ul id="name">
-          <li class="headerListItem">Name</li>
-        </ul>
-        <ul id="UPC">
-            <li class="headerListItem">UPC</li>
-        </ul>
-        <ul id="quantity">
-            <li class="headerListItem">Quantity</li>
-            
+        <li class="headerListItem">Name</li>
+      </ul>
+      <ul id="UPC">
+        <li class="headerListItem">UPC</li>
+      </ul>
+      <ul id="quantity">
+        <li class="headerListItem">Quantity</li>
       </ul>
       <!-- <li id="items"></li> -->
     </div>
