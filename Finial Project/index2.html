@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pantry Inventory</title>
+    <link rel="stylesheet" href="./pantry.css" />
+    <script defer src="./pantry.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap"
+      rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <!-- logo, search field, login info -->
+      <span><h1>Pantry Inventory</h1></span>
+      <span><p>login</span><span>search</p></span>
+    </header>
+    <div class="input">
+      <div>
+        Item Description:
+        <input
+          type="text"
+          id="itemDescription"
+          placeholder="Item description"
+        />
+      </div>
+      <div>
+        UPC Code: <input type="text" id="upcCode" placeholder="UPC Code" />
+      </div>
+      <div>
+        How Many: <input type="number" id="amount" placeholder="amount" />
+      </div>
+      <div>
+        Location: <select name="location" id="location">
+          <option value="freezer">Freezer</option>
+          <option value="pantry">Pantry</option>
+          <option value="chestFreezer">Chest Freezer</option>
+          <option value="pantry2">Pantry 2</option>
+        </select>
+      </div><div>
+        Category: <input type="text" id="upcCode" placeholder="Category" />
+      </div><div>
+        Min Stock: <input type="text" id="upcCode" placeholder="Min Stock" />
+      </div><div>
+        Exp Date: <input type="text" id="upcCode" placeholder="Exp Date" />
+      </div>
+      <div>
+        Image: <input type="file" id="upcCode" />
+      </div>
+      <div>
+        <button class="mainbutton" onclick="addItem()">Add</button>
+        <button class="mainbutton" onclick="updateItem()">Update</button>
+        <button id="delete" onclick="deleteItem()">Delete</button>
+      </div>
+    </div>
+    <hr />
+    <div id="output">
+      <ul id="name">
+          <li class="headerListItem">Name</li>
+        </ul>
+        <ul id="UPC">
+            <li class="headerListItem">UPC</li>
+        </ul>
+        <ul id="quantity">
+            <li class="headerListItem">Quantity</li>
+            
+      </ul>
+      <!-- <li id="items"></li> -->
+    </div>
+  </body>
+</html>

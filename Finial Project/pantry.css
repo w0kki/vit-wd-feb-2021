@@ -29,6 +29,7 @@ button{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: lightgray;
     /* width: 100px;  */
 }
 
@@ -47,3 +48,8 @@ button{
 #quantity{
     padding-right: 2px;
 }
+
+/* head{
+    display: flex;
+    justify-content: space-between;
+} */
